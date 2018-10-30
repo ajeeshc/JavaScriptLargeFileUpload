@@ -1,0 +1,15 @@
+﻿<div>
+    <p class="error" id="statusMsg"></p>
+
+    <div ng-controller="uploadController">        
+        <input id="myFile" type="file" />
+        <button id="uploadButton" ng-click="uploadFile()">Upload</button>
+        <button id="cancelButton" disabled ng-click="cancel()">Cancel</button>
+    </div>
+
+    <div>
+        <progress id="uploadProgress" value="0" max="100"  /><span id="uploadProgressText"></span>
+    </div>
+    <div id="spListUrlDiv"></div>
+    <div id="downloadUrlDiv"></div>
+</div>
